@@ -1,0 +1,51 @@
+
+.value-card {
+  width: 270px;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-width: 1px;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+.value-card:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
+}
+
+
+.value-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 14px;
+  color: #374151; /* dark gray */
+  margin-bottom: 6px;
+}
+
+.value-header .icon {
+  color: #9ca3af; /* light gray */
+  font-size: 16px;
+}
+
+.value-amount {
+  font-size: 24px;
+  font-weight: bold;
+  color: #111827; /* dark gray */
+}
+
+.stat-completed {
+  color: rgb(37 99 235 / var(--tw-text-opacity, 1)); 
+}
+
+.stat-active {
+  color: rgb(22 163 74 / var(--tw-text-opacity, 1)); 
+}
+
+.stat-pending {
+  color: rgb(202 138 4 / var(--tw-text-opacity, 1))
+}

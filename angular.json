@@ -25,6 +25,7 @@
               }
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "server": "src/main.server.ts",
@@ -64,7 +65,8 @@
               "buildTarget": "threndx-angular-project:build:production"
             },
             "development": {
-              "buildTarget": "threndx-angular-project:build:development"
+              "buildTarget": "threndx-angular-project:build:development",
+              "hmr": true
             }
           },
           "defaultConfiguration": "development"

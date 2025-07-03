@@ -1,0 +1,19 @@
+<div class="value-card">
+  <div class="value-header">
+    <div>{{ stat.name }}</div>
+  </div>
+
+  @if (stat.name === 'Total Value') {
+    <div class="value-amount">
+      {{ stat.amount | currency:'USD':'symbol':'1.0-0' }}
+    </div>
+  } @else {
+    <div class="value-amount" [ngClass]="{
+      'stat-active': stat.name === 'Active Projects',
+      'stat-pending': stat.name === 'Pending',
+      'stat-completed': stat.name === 'Completed'
+    }">
+      {{ stat.amount }}
+    </div>
+  }
+</div>

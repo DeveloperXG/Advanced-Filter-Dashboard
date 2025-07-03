@@ -1,0 +1,39 @@
+
+.filter-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.search-box {
+  flex: 1;
+  min-width: 100x;
+}
+
+.category-dropdown,
+.date-picker-group,
+.sort-title {
+  flex: 1;
+  min-width: 120px;
+}
+
+
+
+.date-input {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+
+:host {
+  display: block;
+  width: 100%;
+}
+
+
+
+
+
+

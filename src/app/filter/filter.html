@@ -1,0 +1,104 @@
+<div class="card border-1 rounded-3 mb-4">
+  <div class="card-body p-4">
+    <h3 class="card-title fs-5 fw-semibold text-dark mb-3">Filters</h3>
+    
+    <div class="row g-3 align-items-end">
+      <!-- Search Input -->
+      <div class="col-12 col-md-3">
+        <input 
+          type="text" 
+          class="form-control border-1 rounded-2" 
+          placeholder="Search items..."
+          [(ngModel)]="searchText"
+          (input)="onSearchChange()">
+      </div>
+
+      <!-- Category Dropdown -->
+      <div class="col-12 col-md-2">
+        <select 
+          class="form-select border-1 rounded-2" 
+          (change)="onCategoryChange($event)">
+          <option value="">All Categories</option>
+          <option value="Marketing">Marketing</option>
+          <option value="Technology">Technology</option>
+          <option value="Sales">Sales</option>
+          <option value="Design">Design</option>
+          <option value="HR">HR</option>
+          <option value="Finance">Finance</option>
+        </select>
+      </div>
+
+      <!-- Date Range Pickers -->
+      <div class="col-12 col-md-2">
+        <label class="form-label small text-muted">From</label>
+        <input 
+          type="date" 
+          class="form-control border-1 rounded-2"
+          [(ngModel)]="fromDate"
+          (change)="onDateChange()">
+         
+
+      </div>
+
+      <div class="col-12 col-md-2">
+        <label class="form-label small text-muted">To</label>
+        <input 
+          type="date" 
+          class="form-control border-1 rounded-2"
+          [(ngModel)]="toDate"
+          (change)="onDateChange()">
+      </div>
+
+      <!-- Sort by Title -->
+      <div class="col-12 col-md-2">
+        <button 
+          class="btn btn-outline-secondary btn-sm d-flex align-items-center border-1 rounded-2"
+          type="button">
+          <i class="fas fa-sort-up"></i>
+          <span>Title</span>
+        </button>
+      </div>
+
+      <!-- Results Count -->
+      <div class="col-12 col-md-1">
+        <i class="fas fa-list text-muted small">
+          {{ results }} results
+        </i>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
